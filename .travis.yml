@@ -1,0 +1,12 @@
+language: clojure
+lein: 2.9.1
+
+jdk:
+  - oraclejdk11
+  - oraclejdk8
+
+script: lein cloverage --coveralls
+
+after_success:
+  - curl -F json_file=@target/coverage/coveralls.json https://coveralls.io/api/v1/jobs
+  - lein deploy clojars
