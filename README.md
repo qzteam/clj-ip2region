@@ -3,10 +3,21 @@
 [![Build Status](https://travis-ci.org/qzteam/clj-ip2region.svg?branch=master)](https://travis-ci.org/qzteam/clj-ip2region)
 [![Coverage Status](https://coveralls.io/repos/github/qzteam/clj-ip2region/badge.svg?branch=master)](https://coveralls.io/github/qzteam/clj-ip2region?branch=master)
 [![License](https://img.shields.io/github/license/qzteam/clj-ip2region.svg?maxAge=86400)](./LICENSE)
-[![Dependencies Status](https://versions.deps.co/qzteam/clj-ip2region/status.png)](https://versions.deps.co/qzteam/clj-ip2region)
+[![Dependencies Status](https://versions.deps.co/qzteam/clj-ip2region/status.svg)](https://versions.deps.co/qzteam/clj-ip2region)
 [![Clojars Project](https://img.shields.io/clojars/v/clj-ip2region.svg)](https://clojars.org/clj-ip2region)
 
 [ip2region](https://github.com/lionsoul2014/ip2region) 的 Clojure 封装。
+
+- 内置数据库文件
+- 仅保留线程安全的内存查询算法
+
+## Install
+
+在 `project.clj` 中引入最新版本的依赖：
+
+```clojure
+[clj-ip2region "x.y.z"]
+```
 
 ## Usage
 
