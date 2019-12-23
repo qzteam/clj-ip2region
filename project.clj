@@ -1,4 +1,4 @@
-(defproject clj-ip2region "1.0.1-SNAPSHOT"
+(defproject clj-ip2region "1.0.1"
   :description "ip2region clojure wrapper"
   :url "https://github.com/qzteam/clj-ip2region"
   :license {:name "EPL-2.0"
