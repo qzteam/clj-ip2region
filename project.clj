@@ -21,12 +21,14 @@
   :plugins [[lein-kibit "0.1.6"]
             [lein-cloverage "1.1.1"]
             [lein-pprint "1.2.0"]
-            [lein-resource "17.06.1"]]
+            [lein-resource "17.06.1"]
+            [lein-shell "0.5.0"]]
   :profiles {:provided {:dependencies [[org.clojure/clojure "1.10.1"]]}}
   :repl-options {:init-ns clj-ip2region.ip2region}
   :deploy-repositories [["clojars" {:url "https://clojars.org/repo/"
                                     :username :env
                                     :password :env}]]
+  :aliases {"changelog" ["shell" "conventional-changelog" "-p" "angular" "-i" "CHANGELOG.md" "-s" "-u"]}
   :release-tasks [["vcs" "assert-committed"]
                   ["change" "version" "leiningen.release/bump-version" "release"]
                   ["vcs" "commit" "[lein release] prepare release %s"]
